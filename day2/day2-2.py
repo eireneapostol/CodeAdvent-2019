@@ -29,14 +29,15 @@ numbers = [n for n in array]
 noun = 0
 verb = 0
 
-while noun < 99:
-    if verb == 99:
+while noun <= 99:
+    if verb > 99:
         verb = 0
-    while verb < 99:
+    while verb <= 99:
         numbers = [n for n in array]
         numbers[1] = noun
         numbers[2] = verb
         n = 0
+        print(noun,verb)
         while numbers[n] != 99:
             number = numbers[n]
             if number == 1:
@@ -49,8 +50,8 @@ while noun < 99:
 
         if numbers[0] == 19690720:
             print(100 * noun + verb)
-            noun = 99
-            verb = 99
+            noun = 100
+            verb = 100
         verb += 1
 
     noun += 1
