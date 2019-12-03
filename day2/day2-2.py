@@ -37,7 +37,7 @@ while noun <= 99:
         numbers[1] = noun
         numbers[2] = verb
         n = 0
-        print(noun,verb)
+        #print(noun,verb)
         while numbers[n] != 99:
             number = numbers[n]
             if number == 1:
