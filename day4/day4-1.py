@@ -25,9 +25,10 @@ count = 0
 
 for n in range(first_number, last_number + 1):
     list_of_digits = [int(d) for d in str(n)]
-    if re.match(combined, str(n)) and list_of_digits == sorted(list_of_digits):
-        count += 1
-        #print(n)
+    if list_of_digits == sorted(list_of_digits):
+        if re.match(combined, str(n)):
+            count += 1
+            #print(n)
 
 print(count)
 print("--- %s seconds ---" % (time.time() - start_time))
